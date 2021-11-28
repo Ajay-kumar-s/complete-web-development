@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>click respond</title>
+</head>
+
+<body>
+    <p id="d1">hello world</p>
+    <button id="d2">click me</button>
+    <p id="d3">javascript</p>
+    <button id="d4">click me</button>
+    <p id="d5"></p>
+    <button id="d6">click me</button>
+    <p id="d7">color change</p>
+    <button id="d8">change color</button>
+    <script>
+        document.getElementById("d8").onclick = function () {
+            document.getElementById("d7").style.color = "red"
+        }
+        document.getElementById("d2").onclick = function () {
+            document.getElementById("d1").innerHTML = "Ajay kumar you did it....."
+        }
+        document.getElementById("d4").onclick = function () {
+            document.getElementById("d3").innerHTML = document.getElementById("d3").innerHTML + "Ajay kumar you did it....."
+        }
+        document.getElementById("d6").onclick = function () {
+            document.getElementById("d5").innerHTML = "ht"
+        }
+
+    </script>
+</body>
+
+</html>
